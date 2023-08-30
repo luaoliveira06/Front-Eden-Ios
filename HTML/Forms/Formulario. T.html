@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body> 
+    <header>
+        <h1>Formulario de Transportes</h1>
+    </header>
+<article>
+<form action="mailto:luaraoliveira06@outlook.com" method="post" 
+      oniput="resultado.value"= parseInt(valor.value)=+ parseInt(valor02.value)">
+oninput="resultado.value= parseInt(valor01.value)+ parseInt(valor02.value)" >
+    <fieldset>
+        <legend><strong>Identificação</strong></legend>
+    <label for="cNome">Nome:</label>
+    <input type="text" name="nome" id="cNome" size="50"
+             placeholder="exemplolua">
+    <br> <br>
+<label for="email">e-Mail:</label>
+<input type="email" id="email" name="email" size="50"
+       <placeholder="exemplolo@exemplo.com"
+<br><br>
+<p>Você mora:</p>
+<input type="radio" name="lugar" id="city" valeu="C">
+<label for="city">Cidade</label>
+<br>
+<input type="radio" name="lugar" id="downtown" value="D"
+<label for="downton" >interior</label>
+</fieldset>
+<br><br>
+<fieldset>
+<p>Qual meio de transporte você usa?</p>
+<input type="checkbox" namo="transporte1" id="bike" valeu="bike">
+<label for="bike">Bicicleta</label>
+<br>
+<input type="checkbox" name="transporte" id="car" valeu="car">
+<legend><strong>Informaçao Extra</strong></legend>
+<label for="car">Carro</label> 
+<br>
+<input type="checkbox" name="transporte" id="metro" value="metro">
+<label for="metro">Metro</label>
+<br>
+<input type="checkbox" name="transporte" id="bus" value="bus">
+<label for="bus">ônibus</label>
+</fieldset>
+<br><br>
+<!--select cria uma lista de opções-->
+<fieldset>
+    <legend><strong>Exemplo range e outplate</strong></legend>
+<label for="game">Escolha seu tipo de jogo: &nbsp;</label>
+<select name="game" id="">game<
+    <!--option é as opções da lista-->
+    <!--valeu são os valores de escolha-->
+<option value="fps">FPS</option>
+<option value="adv">Adventure</option>
+<option value="rpg">RPG</option>
+<option value="moba">M.O.B.A</option>
+<option value="sport">Sport's</option>
+<option value="puzzle">Puzzle</option>
+</select>
+</fieldset> 
+<br><br><br>
+<!--Aqui inicial o datalist ou lista de dados -->
+<fieldset>
+<label for="regiao">Escolha sua cidade</label>
+<input list="cidade" name="city2" id="regiao"
+         placeholder="Digite sua cidade" autocomplete="on"> 
+        <!--datalist é a lista de opções-->
+         <datalist> id="cidade">
+<option value="Recife"></option>
+<option valeu="Olinda"></option>
+<option value="cabo"></option>
+<option value="Paulista"></option>
+<option valeu="Moreno"></option>
+<option value="camaragibe"></option>
+<option value="Jaboatão dos Guararapes"></option>
+<option value="Cabrobó"></option>
+</fieldset>
+</datalist>
+    <br><br>
+    <fieldset> <label for="valor01">O quanto voce curtiu o formulario</label>
+    
+        <br<br>
+0
+<input type="range" id="valor01" name="valor01"> 
+100
+<input type="number" name="valor02" id="valor02" value="10"
+o seu voto é:
+<output name="resultado" id="resultado" value=""></output>
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>Sua opinião</strong></legend>
+    <p>Sugestões, elogio e criticas.</p>
+<textarea name="msg" cols="30" rows="10" placeholder="Digite sua mensagem"
+         required ></textarea> <br><Br>
+<input type="submit" value="Enviar">
+        </form>
+</article>
+</fieldset>
+<br<br<br>
+<footer>
+    <small style="color: crimson;">by Lua oliveira &copy;</small>
+</footer>
+</body>
+</html>
